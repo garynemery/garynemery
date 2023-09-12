@@ -42,7 +42,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(244, 240, 223);
+    background: rgb(255, 254, 251);
     display: flex;
     border-radius:10px;
 }
@@ -68,7 +68,7 @@ h2, h3 {
 }
          /* portfolio styles */
          .content h1 {
-            color: rgb(251, 0, 109);
+            color: rgb(255, 0, 132);
         }
 
         #portfolio {
