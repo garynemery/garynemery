@@ -88,10 +88,15 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0;
+				
 				points = points + 1
-				speed = speed + 3
 				changeBoxText(points);
+				if(speed > 0){
+					speed = speed + 3
+				}
+				if(speed < 0){
+					speed = speed -3
+				}
 
 			};
 		})();
