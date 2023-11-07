@@ -19,6 +19,7 @@
 		}
 		.board{
 			height: 100vh;
+			background-color: rgb(255, 255, 255);
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -73,22 +74,19 @@
 			function update() {
 				positionX = positionX + speed;
 				moveBoxTo(positionX)
-
-			};
-			if (positionX >= boarderWidth) {
+			if (positionX >= boardWidth) {
 				speed = -speed;
 			}
-			else if(positionX < 0){
+			if(positionX < 0){
 				speed = -speed
 			}
-
+		};
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
-			the left side of the screen.
+			the left side of the screen.t
 			*/
 			function handleBoxClick() {
-				
 				points = points + 1
 				changeBoxText(points);
 				if(speed > 0){
@@ -97,7 +95,6 @@
 				if(speed < 0){
 					speed = speed -3
 				}
-
 			};
 		})();
 	</script>
